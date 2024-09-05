@@ -1,0 +1,29 @@
+body{
+    
+    border: 2px solid black;
+    font-size: 16px;
+    margin: 0px auto;
+    max-width: 1024px;
+}
+
+header nav ol{
+    text-align: center;
+}
+
+header nav ol li{
+    border: 2px solid blueviolet;
+    background: lightgray;
+    color: darkslategrey;
+    padding: 10px 16px;
+    display: inline-block;
+    margin-right: 25px;
+    
+}
+
+header nav ol li:hover{
+    background-color: lightslategray;
+    color: lightgray;    
+}
+
+
+
