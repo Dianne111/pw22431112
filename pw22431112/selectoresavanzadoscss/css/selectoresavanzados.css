@@ -1,0 +1,75 @@
+img[alt]{
+    border: 5px solid blue;
+}
+/*Cadena completa*/
+img[src="img/logo.png"]{
+    width: 400px;
+}
+/*principio de a cadena*/
+img[src^="img/"]{
+    width: 150px;
+}
+/*final de la cadena*/
+img[src$="png"]{
+    width: 250px;
+}
+/*contenido en la cadena*/
+img[src*="mg/"]{
+    width: 1000px;
+}
+/*Equivalente a: 
+.resaltado
+.ingles
+.archivo
+*/
+article[class~="resaltado"]{
+    border: 1px dashed blue;
+}
+
+article[class|="ingles"]{
+    text-align: center;
+}
+/*Hijos directos de div*/
+div > p{
+    color:blue;
+}
+div p{
+    color: red;
+}
+/*siguiente elemento*/
+h2 + p{
+    color: gray;
+}
+/*todas las p seguidas de h2*/
+h2 ~ p{
+ color: green;
+}
+
+#resumen, #experimento, #pruebas, #resultados, #conclusiones{
+    color: red;
+}
+
+section:not(#referencias){
+    color: blue;
+}
+/*elementos impares*/
+li:nth-child(odd){
+    color: green;
+}
+/*elementos pares*/
+li:nth-child(even){
+    color: blue;
+}
+/*5to elementos */
+li:nth-child(5){
+    color: red;
+}
+
+/*2do elemento de abajo hacia arriba*/
+li:nth-last-child(2){
+    color: purple;
+}
+p::first-line{
+    color: red;
+    font-weight: bold;
+}
