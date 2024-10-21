@@ -1,0 +1,228 @@
+/*Alumno: Parroquin Diaz Dianne
+Programación Web - Segundo examen parcial */
+body{
+    font-size: 16px;
+    font-family: sans-serif;
+    margin: 0px auto;
+}
+.contenedor{
+    background: rgb(255, 255, 255);
+    display: grid;
+    grid-template: 
+        "header header"
+        "sidebar seccion01"
+        ". seccion02"
+        "footer footer";
+}
+
+.header{
+    background: rgb(246, 246, 234);
+    grid-area: header;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.header ul{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    color: rgb(59, 30, 213);
+    padding: 0px;
+    font-weight: bold;
+    list-style: none;
+}
+.header input{
+    background: rgb(59, 30, 213);
+    padding: 5px 10px;
+    color: whitesmoke;
+    border-radius: 5px;
+    border: none;
+}
+
+.sidebar{
+    grid-area: sidebar;
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    padding-left: 50px;
+    gap: 10px;
+}
+.sidebar input[type="search"]{
+    height: 35px;
+    width: 80%;
+}
+.sidebar ul{
+    list-style: none;
+    padding-left: 0px;
+    line-height: 40px;
+}
+.sidebar li:first-child {
+    color: rgb(59, 30, 213);
+}
+.sidebar article{
+    background: rgb(243, 242, 251);
+    padding: 20px 20px ;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    gap: 15px;
+    max-width: 70%;
+    color: rgb(17, 40, 76);
+}
+.sidebar span{
+    font-size: 1.1em;
+    font-weight: bold;
+
+}
+.sidebar input[type="button"]{
+    background: rgb(59, 30, 213);
+    padding: 8px 10px;
+    color: whitesmoke;
+    border-radius: 5px;
+    border: none;
+}
+
+
+.seccion01{
+    grid-area: seccion01;
+    color: rgb(16, 40, 73);
+    padding: 30px;
+    width: 80%;
+}
+.title{
+    font-size: 2em;
+    font-weight: bold;
+}
+.main-link{
+    color: rgb(57, 40, 159);
+    border-bottom: 1px solid rgb(57, 40, 159) ;
+    float: right;
+}
+.sec01-link{
+    color: rgb(57, 40, 159);
+    font-size: 1em;
+    padding: 5px 0px;
+}
+
+.secc01cont {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 15px;
+    gap: 20px 0px;
+}
+.secc01cont article{
+    width: 25%;
+    border: 0.5px solid lightgray;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    color: rgb(17, 40, 76);
+    font-weight: bold;
+    font-size:1.1em;
+}
+.secc01cont img{
+    width: 45px;
+}
+
+.seccion02{
+    grid-area: seccion02;
+    color: rgb(16, 40, 73);
+    padding: 30px;
+    width: 80%;
+    padding-bottom: 80px;
+}
+.secc02cont{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px;
+    gap: 25px;
+    margin-top: 15px;
+}
+.secc02cont article{
+    background: rgb(246, 246, 234);
+    padding: 25px 0px 0px 0px;
+    color: rgb(17, 40, 76);
+    font-weight: bold;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    font-size: 1.1em;
+}
+.secc02cont article:nth-child(2) {
+    background: rgb(243, 242, 251);
+}
+.secc02cont span{
+    margin-left: 15px;
+}
+.seccion02 article img{
+    width: 100%;
+    
+}
+.footer{
+    grid-area: footer;
+    background: rgb(17, 40, 76);
+    color: white;
+    padding: 40px 70px;
+}
+
+.footercont01{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px;
+    font-size: 2em;
+    font-weight: bold;
+}
+.footercont02{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px;
+    font-size: 0.9em;
+    width: 80%;
+    font-weight: bold;
+}
+.footercont02 ul{
+    list-style: none;
+    padding: 0px;
+    line-height: 28px;
+    font-weight: normal;
+}
+
+.footercont03 {
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    justify-content: space-between; 
+    gap: 10px;
+    padding: 10px 0; 
+    color: rgb(221, 206, 134);
+    font-weight: bold;
+    width: 95%;
+
+}
+
+.footercont03 img {
+    height: 40px; 
+}
+
+.footercont03 span {
+    font-size: 14px;
+    font-weight: bold;
+    float: right;
+    justify-content: flex-end;
+}
+.support{
+    display: flex;
+    justify-content: flex-end;
+}
+.support img{
+    width: 40px;
+}
